@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "XMind Space Pan",
+  "version": "1.0.0",
+  "description": "Hold Space to pan (hand tool) in XMind like Illustrator.",
+  "permissions": [],
+  "host_permissions": ["https://app.xmind.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://app.xmind.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
